@@ -1,0 +1,139 @@
+body, html{
+    height: 100%;
+}
+#bg{
+    background-image: url("../img/kygoback.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-page h1, .main-page p, .main-page h3{
+    color: white;
+}
+.main-page h1{
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.main-page .explore-now{
+    position: absolute;
+    bottom: 0;
+    animation-name: exploreAnim;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exploreAnim{
+    0%{
+        bottom: 0%;
+        opacity: 0;
+    }
+    50%{
+        bottom: 1%;
+        opacity: 1;
+        color: rgb(69, 219, 212);
+    }
+    100%{
+        bottom: 2%;
+        opacity: 0;
+    }
+}
+
+#navbar li a{
+    color: rgb(13, 41, 39);
+}
+
+/*Sticky nav*/
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(13, 41, 39);
+}
+.sticky + #explore-section{
+    padding-top: 60px;
+}
+.sticky li a{
+    color: white !important;
+}
+
+/*Explore section*/
+.explore-section{
+    padding: 0.5em;
+}
+
+
+.gallery{
+    background: rgba(13, 41, 39, 0.89);
+    color: white;
+    text-transform: uppercase;
+    justify-content: center;
+    justify-items: center;
+}
+.gallery h1{
+    text-align: center;
+}
+
+.gallery .carousel-inner{
+    margin-bottom: 1em;
+    border: 0.2em solid white;    
+}
+
+
+.about h1, .contact h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-kygo{
+    font-size: 1.2em;
+}
+.about-kygo span{
+    color: rgba(18, 59, 57, 0.89);
+    font-weight: bold;
+}
+
+.contact{
+    background: black;
+}
+
+.contact form{
+    background: rgba(13, 41, 39, 0.89);
+}
+
+.contact hr{
+    background: white;
+    opacity: 0.6;
+}
+
+.contact h1, .contact label{
+    color: white;
+}
+
+.btn-primary{
+    background: rgba(13, 41, 39, 0.89);
+    border: none;
+}
+
+.btn:hover{
+    background: rgba(22, 71, 68, 0.89);
+}
+
+
+.copyright{
+    text-align: center;
+    letter-spacing: 1px;
+}
